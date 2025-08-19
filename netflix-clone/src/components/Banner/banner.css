@@ -1,4 +1,5 @@
 .banner {
+   
   height: 80vh;
   margin-bottom: 80px;
   color: white;
@@ -6,7 +7,7 @@
 }
 .banner_contents {
   margin-left: 30px;
-  padding-top: 300px;
+  padding-top: 150px;
 }
 .banner_titel {
   font-size: 3rem;
@@ -48,11 +49,11 @@
   bottom: 0; /* stick to bottom */
   left: 0;
   right: 0;
-  height: 40vh;
+  height:30vh;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
-    rgba(37, 37, 37, 0),
+    rgba(37, 37, 37, 0.91),
     #111
   );
 }
