@@ -7,7 +7,7 @@ import YouTube from 'react-youtube'
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setmovies] = useState([]);
   const[trailerUrl, settrailerUrl]=useState("");
-  const base_Url = "https:image.tmdb.org/t/p/original";
+  const base_Url = "https://image.tmdb.org/t/p/original";
   useEffect(() => {
     (async () => {
       try {
@@ -25,7 +25,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
   if(trailerUrl){
    settrailerUrl('')
   }else{
-   movieTrailer(movie?.titel|| movie?.name || movie?.original_name)
+   movieTrailer(movie?.title|| movie?.name || movie?.original_name)
    .then((url)=>{
   console.log(url)
    const urlParams=new URLSearchParams(new URL(url).search)
@@ -58,7 +58,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         ))}
       </div>
       <div style={{padding:"40px"}}>
-{trailerUrl && <YouTube VideoId={trailerUrl} opts={opts}/>}
+{trailerUrl && <YouTube videoId={trailerUrl} opts={opts}/>}
       </div>
     </div>
   );

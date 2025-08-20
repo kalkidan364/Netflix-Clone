@@ -1,5 +1,4 @@
 .banner {
-   
   height: 80vh;
   margin-bottom: 80px;
   color: white;
@@ -49,7 +48,7 @@
   bottom: 0; /* stick to bottom */
   left: 0;
   right: 0;
-  height:30vh;
+  height: 30vh;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
@@ -57,4 +56,3 @@
     #111
   );
 }
-
